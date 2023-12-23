@@ -1,0 +1,157 @@
+[gd_scene load_steps=51 format=3 uid="uid://bya3aawgasbky"]
+
+[ext_resource type="PackedScene" uid="uid://bhpfp6e7cc23g" path="res://modular_building/pieces/small_roof_outisde_002.tscn" id="1_61mqn"]
+[ext_resource type="PackedScene" uid="uid://c5basc1ddds8s" path="res://modular_building/pieces/small_roof_outisde_corner_001.tscn" id="2_ksiw5"]
+[ext_resource type="PackedScene" uid="uid://boi7wmffos0ky" path="res://modular_building/pieces/small_roof_outisde_corner_002.tscn" id="3_yubi3"]
+[ext_resource type="PackedScene" uid="uid://d33w5n4bpee1c" path="res://modular_building/pieces/cylinder_037.tscn" id="4_6g1en"]
+[ext_resource type="PackedScene" uid="uid://bocefm3cginu4" path="res://modular_building/pieces/small_roof_inside_001.tscn" id="5_2f4hi"]
+[ext_resource type="PackedScene" uid="uid://cf3o8rergjml5" path="res://modular_building/pieces/small_roof_inside_002.tscn" id="6_b7h2k"]
+[ext_resource type="PackedScene" uid="uid://660womr0xg0l" path="res://modular_building/pieces/small_roof_inside_dec.tscn" id="7_efvpy"]
+[ext_resource type="PackedScene" uid="uid://bbu16o5wucdva" path="res://modular_building/pieces/small_roof_outisde_dec_003.tscn" id="8_dbode"]
+[ext_resource type="PackedScene" uid="uid://b2u3etx0ag403" path="res://modular_building/pieces/small_roof_outisde_dec_002.tscn" id="9_emgg7"]
+[ext_resource type="PackedScene" uid="uid://dgbddhqasatpa" path="res://modular_building/pieces/small_roof_inside_end.tscn" id="10_3fe5o"]
+[ext_resource type="PackedScene" uid="uid://cqrr4220ucl0y" path="res://modular_building/pieces/big_roof_001.tscn" id="11_lhqjb"]
+[ext_resource type="PackedScene" uid="uid://8y6h0gn7gkv0" path="res://modular_building/pieces/big_roof.tscn" id="12_wloi1"]
+[ext_resource type="PackedScene" uid="uid://crkt4nvnkmfe6" path="res://modular_building/pieces/big_roof_dec.tscn" id="13_a3wuh"]
+[ext_resource type="PackedScene" uid="uid://b8ogn2ly2d4uv" path="res://modular_building/pieces/big_roof_end.tscn" id="14_7xoai"]
+[ext_resource type="PackedScene" uid="uid://bh36o77a3hvln" path="res://modular_building/pieces/small_roof_outisde.tscn" id="15_2c61q"]
+[ext_resource type="PackedScene" uid="uid://c5wah4rq5j8ug" path="res://modular_building/pieces/small_roof_outisde_dec_001.tscn" id="16_1ecum"]
+[ext_resource type="PackedScene" uid="uid://cj8hetk0hm8cy" path="res://modular_building/pieces/small_roof_outisde_corner.tscn" id="17_jut18"]
+[ext_resource type="PackedScene" uid="uid://ddsrj2gt4awlk" path="res://modular_building/pieces/small_roof_outisde_001.tscn" id="18_guyb3"]
+[ext_resource type="PackedScene" uid="uid://lnj7jp4rrjlv" path="res://modular_building/pieces/small_roof_outisde_dec.tscn" id="19_1wyld"]
+[ext_resource type="PackedScene" uid="uid://di8p6r5rkwe83" path="res://modular_building/pieces/stairs.tscn" id="20_shs7t"]
+[ext_resource type="PackedScene" uid="uid://dqksfeoqr5atp" path="res://modular_building/pieces/door_001.tscn" id="21_vky40"]
+[ext_resource type="PackedScene" uid="uid://i82dvvq61o88" path="res://modular_building/pieces/pillar_002.tscn" id="22_hwct8"]
+[ext_resource type="PackedScene" uid="uid://buqcvhf2w2ti8" path="res://modular_building/pieces/pillar_big_001.tscn" id="23_kl0q5"]
+[ext_resource type="PackedScene" uid="uid://bgk2e5kgdcff3" path="res://modular_building/pieces/wall_inside_001.tscn" id="24_544xv"]
+[ext_resource type="PackedScene" uid="uid://bv04aeryt0fiy" path="res://modular_building/pieces/wall_outer_window_001.tscn" id="25_xcoba"]
+[ext_resource type="PackedScene" uid="uid://bqiwqowpf0wax" path="res://modular_building/pieces/window_holes_001.tscn" id="26_urw6v"]
+[ext_resource type="PackedScene" uid="uid://bmbhyqhvggjvg" path="res://modular_building/pieces/pillar_big_002.tscn" id="27_x0ubu"]
+[ext_resource type="PackedScene" uid="uid://brojmqrwkyalv" path="res://modular_building/pieces/door_002.tscn" id="28_ux3xd"]
+[ext_resource type="PackedScene" uid="uid://cyquffmbwa7lk" path="res://modular_building/pieces/wall_outer_001.tscn" id="29_sk4b1"]
+[ext_resource type="PackedScene" uid="uid://174bwdccucxi" path="res://modular_building/pieces/small_stairs_stone.tscn" id="30_7ncwn"]
+[ext_resource type="PackedScene" uid="uid://n2ybw8s70qo2" path="res://modular_building/pieces/wall_outer_door_002.tscn" id="31_ybp12"]
+[ext_resource type="PackedScene" uid="uid://cpd1ytxd1wreb" path="res://modular_building/pieces/wall_small_roof_001.tscn" id="32_mpcss"]
+[ext_resource type="PackedScene" uid="uid://dauc03sxsneh3" path="res://modular_building/pieces/wall_small_roof.tscn" id="33_tf8gb"]
+[ext_resource type="PackedScene" uid="uid://cscwml7wd0yl1" path="res://modular_building/pieces/floor_stone.tscn" id="34_h5cgs"]
+[ext_resource type="PackedScene" uid="uid://c78l8ynfujqo0" path="res://modular_building/pieces/wall_big_roof.tscn" id="35_odb5r"]
+[ext_resource type="PackedScene" uid="uid://drrcvawph7y4y" path="res://modular_building/pieces/pillar_004.tscn" id="36_ci2jw"]
+[ext_resource type="PackedScene" uid="uid://hgssr6elir" path="res://modular_building/pieces/floor_wooden_platform_003.tscn" id="37_ebf2q"]
+[ext_resource type="PackedScene" uid="uid://bwfrh5hdrorsq" path="res://modular_building/pieces/floor_wooden_roof.tscn" id="38_r173j"]
+[ext_resource type="PackedScene" uid="uid://c7h0uxa3wo5nh" path="res://modular_building/pieces/pillar_001.tscn" id="39_a3phr"]
+[ext_resource type="PackedScene" uid="uid://ikpc8m8c2p4l" path="res://modular_building/pieces/pillar_003.tscn" id="40_nejmo"]
+[ext_resource type="PackedScene" uid="uid://cfi3phurblpp8" path="res://modular_building/pieces/pillar_010.tscn" id="41_gvcub"]
+[ext_resource type="PackedScene" uid="uid://d4eqs6khaaquq" path="res://modular_building/pieces/pillar_011.tscn" id="42_lgbtb"]
+[ext_resource type="PackedScene" uid="uid://b0swfgaa1ifig" path="res://modular_building/pieces/pillar_007.tscn" id="43_e5uq3"]
+[ext_resource type="PackedScene" uid="uid://bxulssrxpyn6k" path="res://modular_building/pieces/pillar_008.tscn" id="44_m2as1"]
+[ext_resource type="PackedScene" uid="uid://gar767phw3y3" path="res://modular_building/pieces/small_stairs_wooden.tscn" id="45_pw1iq"]
+[ext_resource type="PackedScene" uid="uid://tcyjj4fg2u4r" path="res://modular_building/pieces/pillar_005.tscn" id="46_tocvv"]
+[ext_resource type="PackedScene" uid="uid://diev88fbr8il0" path="res://modular_building/pieces/wall_outer_002.tscn" id="47_hh87i"]
+[ext_resource type="PackedScene" uid="uid://d7b2bg8xqof3" path="res://modular_building/pieces/wall_outer_door_001.tscn" id="48_dkbnt"]
+[ext_resource type="PackedScene" uid="uid://dbejwkfjtdni4" path="res://modular_building/pieces/wall_big_roof_001.tscn" id="49_21bh0"]
+[ext_resource type="PackedScene" uid="uid://bs6rpi6jlpqbm" path="res://houses/house_1.tscn" id="50_s45xq"]
+
+[node name="Construction" type="Node3D"]
+
+[node name="modular_building" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -100)
+
+[node name="SmallRoofOutisde_002" parent="modular_building" instance=ExtResource("1_61mqn")]
+
+[node name="SmallRoofOutisdeCorner_001" parent="modular_building" instance=ExtResource("2_ksiw5")]
+
+[node name="SmallRoofOutisdeCorner_002" parent="modular_building" instance=ExtResource("3_yubi3")]
+
+[node name="Cylinder_037" parent="modular_building" instance=ExtResource("4_6g1en")]
+
+[node name="SmallRoofInside_001" parent="modular_building" instance=ExtResource("5_2f4hi")]
+
+[node name="SmallRoofInside_002" parent="modular_building" instance=ExtResource("6_b7h2k")]
+
+[node name="SmallRoofInsideDec" parent="modular_building" instance=ExtResource("7_efvpy")]
+
+[node name="SmallRoofOutisdeDec_003" parent="modular_building" instance=ExtResource("8_dbode")]
+
+[node name="SmallRoofOutisdeDec_002" parent="modular_building" instance=ExtResource("9_emgg7")]
+
+[node name="SmallRoofInsideEnd" parent="modular_building" instance=ExtResource("10_3fe5o")]
+
+[node name="BigRoof_001" parent="modular_building" instance=ExtResource("11_lhqjb")]
+
+[node name="BigRoof" parent="modular_building" instance=ExtResource("12_wloi1")]
+
+[node name="BigRoofDec" parent="modular_building" instance=ExtResource("13_a3wuh")]
+
+[node name="BigRoofEnd" parent="modular_building" instance=ExtResource("14_7xoai")]
+
+[node name="SmallRoofOutisde" parent="modular_building" instance=ExtResource("15_2c61q")]
+
+[node name="SmallRoofOutisdeDec_001" parent="modular_building" instance=ExtResource("16_1ecum")]
+
+[node name="SmallRoofOutisdeCorner" parent="modular_building" instance=ExtResource("17_jut18")]
+
+[node name="SmallRoofOutisde_001" parent="modular_building" instance=ExtResource("18_guyb3")]
+
+[node name="SmallRoofOutisdeDec" parent="modular_building" instance=ExtResource("19_1wyld")]
+
+[node name="Stairs" parent="modular_building" instance=ExtResource("20_shs7t")]
+
+[node name="Door_001" parent="modular_building" instance=ExtResource("21_vky40")]
+
+[node name="Pillar_002" parent="modular_building" instance=ExtResource("22_hwct8")]
+
+[node name="PillarBig_001" parent="modular_building" instance=ExtResource("23_kl0q5")]
+
+[node name="WallInside_001" parent="modular_building" instance=ExtResource("24_544xv")]
+
+[node name="WallOuterWindow_001" parent="modular_building" instance=ExtResource("25_xcoba")]
+
+[node name="WindowHoles_001" parent="modular_building" instance=ExtResource("26_urw6v")]
+
+[node name="PillarBig_002" parent="modular_building" instance=ExtResource("27_x0ubu")]
+
+[node name="Door_002" parent="modular_building" instance=ExtResource("28_ux3xd")]
+
+[node name="WallOuter_001" parent="modular_building" instance=ExtResource("29_sk4b1")]
+
+[node name="SmallStairsStone" parent="modular_building" instance=ExtResource("30_7ncwn")]
+
+[node name="WallOuterDoor_002" parent="modular_building" instance=ExtResource("31_ybp12")]
+
+[node name="WallSmallRoof_001" parent="modular_building" instance=ExtResource("32_mpcss")]
+
+[node name="WallSmallRoof" parent="modular_building" instance=ExtResource("33_tf8gb")]
+
+[node name="FloorStone" parent="modular_building" instance=ExtResource("34_h5cgs")]
+
+[node name="WallBigRoof" parent="modular_building" instance=ExtResource("35_odb5r")]
+
+[node name="Pillar_004" parent="modular_building" instance=ExtResource("36_ci2jw")]
+
+[node name="FloorWoodenPlatform_003" parent="modular_building" instance=ExtResource("37_ebf2q")]
+
+[node name="FloorWoodenRoof" parent="modular_building" instance=ExtResource("38_r173j")]
+
+[node name="Pillar_001" parent="modular_building" instance=ExtResource("39_a3phr")]
+
+[node name="Pillar_003" parent="modular_building" instance=ExtResource("40_nejmo")]
+
+[node name="Pillar_010" parent="modular_building" instance=ExtResource("41_gvcub")]
+
+[node name="Pillar_011" parent="modular_building" instance=ExtResource("42_lgbtb")]
+
+[node name="Pillar_007" parent="modular_building" instance=ExtResource("43_e5uq3")]
+
+[node name="Pillar_008" parent="modular_building" instance=ExtResource("44_m2as1")]
+
+[node name="SmallStairsWooden" parent="modular_building" instance=ExtResource("45_pw1iq")]
+
+[node name="Pillar_005" parent="modular_building" instance=ExtResource("46_tocvv")]
+
+[node name="WallOuter_002" parent="modular_building" instance=ExtResource("47_hh87i")]
+
+[node name="WallOuterDoor_001" parent="modular_building" instance=ExtResource("48_dkbnt")]
+
+[node name="WallBigRoof_001" parent="modular_building" instance=ExtResource("49_21bh0")]
+
+[node name="House1" parent="." instance=ExtResource("50_s45xq")]

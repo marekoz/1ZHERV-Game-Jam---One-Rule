@@ -1,0 +1,121 @@
+[gd_scene load_steps=12 format=3 uid="uid://b6nqhg66id6r4"]
+
+[ext_resource type="Script" path="res://knife.gd" id="1_wg8to"]
+[ext_resource type="PackedScene" uid="uid://bl7ig4kkue1pv" path="res://models/kunai.glb" id="2_ghfmj"]
+
+[sub_resource type="Animation" id="Animation_542tl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("kunai:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_eimmj"]
+resource_name = "attached"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("kunai:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_rfmj4"]
+resource_name = "flying"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("kunai:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, -3.14159), Vector3(0, 1.5708, -6.28319)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qdvgv"]
+_data = {
+"RESET": SubResource("Animation_542tl"),
+"attached": SubResource("Animation_eimmj"),
+"flying": SubResource("Animation_rfmj4")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w0x7v"]
+size = Vector3(0.0743591, 0.187115, 0.245807)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0qjv8"]
+transparency = 1
+vertex_color_use_as_albedo = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_gjuhr"]
+direction = Vector3(1, 1, 0)
+spread = 180.0
+initial_velocity_min = 7.9
+initial_velocity_max = 9.4
+scale_min = 0.35
+scale_max = 0.35
+collision_mode = 1
+collision_friction = 1.0
+collision_bounce = 0.05
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_yt114"]
+size = Vector2(0.4, 0.4)
+orientation = 2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_frth3"]
+radius = 1.5
+
+[node name="Knife" type="CharacterBody3D" groups=["PlayerProjectile"]]
+collision_layer = 0
+collision_mask = 5
+script = ExtResource("1_wg8to")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qdvgv")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0184662, 0.0247162, -0.085025)
+shape = SubResource("BoxShape3D_w0x7v")
+
+[node name="kunai" parent="." instance=ExtResource("2_ghfmj")]
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0, 0, 0)
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+visible = false
+material_override = SubResource("StandardMaterial3D_0qjv8")
+amount = 68
+process_material = SubResource("ParticleProcessMaterial_gjuhr")
+draw_pass_1 = SubResource("PlaneMesh_yt114")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_frth3")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

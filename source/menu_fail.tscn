@@ -1,0 +1,96 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpgd2d8wc2eqk"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_sllql"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kvcmh"]
+font_size = 100
+outline_size = 40
+outline_color = Color(0.121569, 0.0862745, 0.027451, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sllql")
+
+[node name="LevelComplete" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="LevelComplete"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25098, 0.219608, 0.188235, 1)
+
+[node name="Label" type="Label" parent="LevelComplete"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -3.0
+offset_top = 250.0
+offset_right = 37.0
+offset_bottom = 273.0
+grow_horizontal = 2
+text = "Level Failed"
+label_settings = SubResource("LabelSettings_kvcmh")
+
+[node name="Control" type="Control" parent="LevelComplete"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -265.0
+offset_right = 20.0
+offset_bottom = -225.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Button" type="Button" parent="LevelComplete/Control"]
+layout_mode = 0
+offset_left = -100.0
+offset_right = -4.0
+offset_bottom = 31.0
+scale = Vector2(2.16858, 2.19591)
+text = "Exit game"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 528.0
+offset_right = 1298.0
+offset_bottom = 628.0
+
+[node name="Button_level_1" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Level 1"
+
+[node name="Button_level_2" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Level 2"
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+text = "Level 3"
+
+[connection signal="pressed" from="LevelComplete/Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button_level_1" to="." method="_on_button_level_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button_level_2" to="." method="_on_button_level_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
