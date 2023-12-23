@@ -4,7 +4,7 @@ Tým: xkozum08\
 Autor: Marek Kozumplík
 
 ## Build
- - [Itch.io - Windows](https://freesound.org/people/xserra/sounds/320230/)
+ - [Itch.io - Windows](https://marekkoz.itch.io/1zherv-game-jam)
 
 
 ## Použité nástroje:
