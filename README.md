@@ -22,5 +22,5 @@ Godot Engine 4, Krita, Blender
 
 
 ## Addony
-- [Proton Scatter] - Pro generování multimeshe lesa
+- [Proton Scatter](https://github.com/HungryProton/scatter) - Pro generování multimeshe lesa
 - [Simple Grass Textured](https://github.com/IcterusGames/SimpleGrassTextured) - Upravil jsem si shader (gradient, normals) a vytvořil vlastní textury
