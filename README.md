@@ -3,6 +3,10 @@ Téma: One Rule\
 Tým: xkozum08\
 Autor: Marek Kozumplik
 
+## Build
+ - [Itch.io - Windows](https://freesound.org/people/xserra/sounds/320230/)
+
+ 
 ## Použité nástroje:
 Godot Engine 4, Krita, Blender
 
